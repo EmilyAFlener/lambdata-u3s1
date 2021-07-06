@@ -1,2 +1,2 @@
 # lambdatau3s1
-Just my sample repository to test creating environments
+My sample repository to test creating environments and a GitHub repository.
