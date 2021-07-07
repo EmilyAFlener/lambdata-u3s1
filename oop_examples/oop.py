@@ -2,11 +2,16 @@
 # I'll attempt to automate an Aloha Valet Services quote intake and generation.
 
 class EventBooking:
+    manager_hr_cost = 20
+    attendant_hr_cost = 17.5
+
     #Basic information for any Aloha event proposal.
-    def __init__(self, attendants, cars, guests, parking_avail, account_type):
+    def __init__(self, attendants, manager=1, cars, guests, hours, parking_avail, account_type):
         self.attendants = attendants
+        self.manager = manager
         self.cars = cars
         self.guests = guests
+        self.hours = hours
         self.parking_avail = False
         self.account_type = account_type
 
@@ -19,13 +24,14 @@ class EventBooking:
     
     #Determining level of effort for the event. This could factor into rate.
     def effort_level(self):
-        if self.cars < 40:
+        if cars < 40:
             easy
-        elif self.cars <= 39 & >= 71:
+        elif cars <= 39 & >= 71:
             average
-        else self.cars > 70:
+        else cars > 70:
             difficult
         
+
     def rate_type(self)
         if account_type = company:
             rate *  2
@@ -33,6 +39,8 @@ class EventBooking:
             rate * 1.5
         else:
             print('We will be in touch to complete your quote.')
+
+
 
 class Venues(EventBooking):
     #Account specific needs for event venue contracts.
