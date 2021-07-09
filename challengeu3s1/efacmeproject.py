@@ -1,12 +1,17 @@
 # Emily Fleners LS DS Unit 3 Sprint Challenge 1.
 
-
 # Part 1 - Keeping it Classy
 # Creating a class given the parameters from the assignment.
 
+import random
+
+print(random.randint(1000000, 9999999))
+# 8332413 created in the terminal and will be used for this project.
+# Should this function be placed into the parameters itself so it generates each time?
+
 class Product:
 
-    def __init__(self, name, price=10, weight=20, flammability=0.5, identifier):
+    def __init__(self, name, price=10, weight=20, flammability=0.5, identifier=8332413):
         self.name = name
         self.price = price
         self.weight = weight
@@ -50,7 +55,3 @@ class BoxingGlove(Product):
             print('Hey that hurt!')
         else:
             print('OUCH!')
-
-
-# Part 4 - Class Report
-# Creating a report file with product functions.
