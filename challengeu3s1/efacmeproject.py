@@ -20,7 +20,7 @@ class Product:
         if value < 0.5:
             print('Not so stealable ...')
         elif value >= 0.5 & < 1.0:
-            print('Kinda stelable ...')
+            print('Kinda stealable ...')
         else:
             print('Very stealable!')
 
